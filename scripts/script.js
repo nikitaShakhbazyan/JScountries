@@ -44,7 +44,7 @@ const fetchFunction = function() {
         h4.textContent = `Country's area is ${country.area / 1000} thousand square km.`;
 
         const h5 = document.createElement('h5');
-        h5.classList.add('col-md-6');
+        h5.classList.add('col-md-4');
         h5.textContent = `The country's population is approximately ${country.population.toLocaleString()} people`;
 
         const p = document.createElement('p');
