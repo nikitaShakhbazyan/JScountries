@@ -29,8 +29,7 @@ const fetchFunction = function() {
           'row'
         );
         countryDiv.style.border = '2px solid gold';
-        countryDivs.push(countryDiv); 
-
+        countryDivs.push(countryDiv);
         const img = document.createElement('img');
         img.classList.add('col', 'p-2');
         img.src = country.flag;
@@ -70,7 +69,6 @@ const fetchFunction = function() {
         countryDiv.appendChild(h5);
         countryDiv.appendChild(h4);
         countryDiv.appendChild(p);
-        // countryDiv.appendChild(a);
       });
 
       function searching() {
@@ -95,7 +93,10 @@ const fetchFunction = function() {
         }
       }
       searchInput.addEventListener('input', ClearingResults);
+
     });
 };
+
+
 
 fetchFunction();
