@@ -73,18 +73,21 @@ const fetchFunction = function() {
 
       function searching() {
         const searchTerm = searchInput.value.toLowerCase();
-        searchResults.innerHTML = '';
-
+      
         countryDivs.forEach((countryDiv) => {
-          const itemText = countryDiv.textContent.toLowerCase();
-          if (itemText.includes(searchTerm)) {
-            container.appendChild(countryDiv);
+          const h2 = countryDiv.querySelector('h2');
+          const h2Text = h2.textContent.toLowerCase();
+      
+          if (h2Text.includes(searchTerm)) {
+            countryDiv.style.display = 'block'; 
           } else {
-            container.removeChild(countryDiv);
+            countryDiv.style.display = 'none';
           }
-        });
-      }
+        }
+    )}
+      
       searchInput.addEventListener('input', searching);
+      
 
       function ClearingResults() {
         const query = searchInput.value;
@@ -96,7 +99,6 @@ const fetchFunction = function() {
 
     });
 };
-
 
 
 fetchFunction();
