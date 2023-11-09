@@ -31,7 +31,7 @@ const fetchFunction = function() {
         countryDiv.style.border = '2px solid gold';
         countryDivs.push(countryDiv);
         const img = document.createElement('img');
-        img.classList.add('col', 'p-2');
+        img.classList.add('col-md-6', 'p-2');
         img.src = country.flag;
 
         const h2 = document.createElement('h2');
