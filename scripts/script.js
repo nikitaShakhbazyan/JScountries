@@ -3,6 +3,7 @@ const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 
 const container = document.querySelector('.container');
+console.log(container)
 const countryDivs = []; 
 
 const fetchFunction = function() {
